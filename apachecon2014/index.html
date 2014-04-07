@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Apache Cordova</title>
+
+		<meta name="description" content="Apache Cordova Intro">
+		<meta name="author" content="Steve Gill">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/sky.css" id="theme">
+		<link rel="stylesheet" href="css/main.css">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section class="home-page">
+					<h1>Apache Cordova</h1>
+					<img class="cimg" src="img/cordova_assets/Icon/cordova_256.png" />
+					<h2>mobile html, css, and js</h2>
+				</section>
+
+				<section>
+					<div><img src=img/headshots.jpg height=300 width=400 style=""></div>
+					<ul style="list-style: none;">
+					    <li class=fragment>Steve Gill</li>
+					    <li class=fragment>Cordova Committer</li>
+					    <li class=fragment>Love Beer + Hockey</li>
+					    <li class=fragment>Obviously Canadian</li>
+						<li class=fragment><a href=http://twitter.com/stevesgill>@SteveSGill</a></li>
+					</ul>
+				</section>
+				
+				<section class="">
+					<h3>Current work</h3>
+					<ul style="list-style: none;">
+                        <li class=fragment>Refactor + redesign of <a href="http://plugins.cordova.io" target="_blank">plugins site</a></li>
+					    <li class=fragment>Releases, Releases and more Releases</li>
+					    <li class=fragment>CLI + Plugman</li>
+					</ul>
+				</section>
+
+				<section>
+                    <h3>The Problem</h3>
+                    <p>Lots of mobile operating systems</p>
+                    <ul style="list-style: none;">
+                        <li>Android, iOS,</li>
+					    <li>Windows Phone 7 + 8</li>
+					    <li>Blackberry</li>
+					    <li>Firefox OS, Tizen, Ubuntu, Amazon FireOS</li>
+					</ul>
+				</section>
+		
+				<section>
+                    <h3>The Problem</h3>
+                    <ul style="list-style: none;">
+                        <li class=fragment>Learn multiple languages or hire multiple teams</li>
+					    <li class=fragment>Need to develop on Mac & Windows</li>
+					    <li class=fragment>Huge amount of investment to target multiple platforms</li>
+					</ul>
+				</section>
+                
+                <section>
+                    <img src="img/rage.jpg" />
+                </section>
+                
+				<section>
+					<h3>Solution?</h3>
+					<h2 class=fragment>Apache Cordova!</h2>
+				</section>
+                
+                <section>
+                    <p>Apache Cordova allows developers to build cross platform mobiles apps using HTML, JS & CSS</p>
+                </section>
+                
+                <section>
+                    <h2>History of Cordova</h2>
+                </section>
+                
+                <section>
+                    <h3>2008 - PhoneGap was created</h3>
+                    <p>iPhone sdk, Blackberry 4.2 and Android 1.0</p>
+                </section>
+                
+                <section>
+                    <h3>2009 - Accept & Reject</h3>
+                    <p>As developers started to love us, Apple did not</p>
+                </section>
+                
+                <section>
+                    <h3>2010 - Maturing</h3>
+                    <p>Outside contributions picked up (including IBM!)</p>
+                </section>
+                
+                <section>
+                    <h3>2011 - Growing Pains</h3>
+                    <p>1.0, Adobe, Apache</p>
+                </section>
+                
+                <section>
+                    <h3>2012 - Cadence realized</h3>
+                    <p>2.0, and 1 million downloads.</p>
+                </section>
+                
+                <section>
+                    <h3>2013 - Workflow overhaul</h3>
+                    <p>3.0, broke out plugins, cordova-cli distribution moved to npm</p>
+                </section>
+
+                <section>
+                    <h3>How does Cordova work?</h3>
+                    <p>webviews & native apis through bridge!</p>
+                </section>
+                
+                <section>
+                    <h3>Platforms we support</h3>
+                    <ul>
+                        <li>iOS</li>
+                        <li>Android</li>
+                        <li>Blackberry 10</li>
+                        <li>Windows Phone 7 & 8</li>
+                        <li>Firefox OS</li>
+                        <li>Ubuntu</li>
+                        <li>Tizen</li>
+                        <li>Amazon FireOS</li>
+                        <li>Windows 8</li>
+                    </ul>
+                </section>
+                
+                <section>
+                    <h3>Cordova's goal is to implement web standards</h3>
+                    <p>APIs were originally mocked after proposed standards</p>
+                    
+                </section>
+                
+                <section data-background="white">
+                <h2>Who does Cordova dev?</h2>
+                    <img width=100 src=img/adobe.jpg />
+                    <img width=80 src=img/bblogo.jpg />
+                    <img width=180 src=img/google.jpg />
+                    <img width=250 src=img/msft.jpg />
+                    <img width=140 src=img/ibm.jpg />
+                    <img width=100 src=img/intel.jpg />
+                    <img width=100 src=img/moz.jpg />
+                    <img width=100 src=img/can.jpg />
+                    <img width=100 src=img/amazon.jpg />
+                    
+                </section>
+                
+                <section>
+                    <h2>Developing with Cordova</h2>
+                </section>
+                
+                <section>
+                    <h2>Install Cordova</h2>
+                    <pre><code data-trim contenteditable>
+                        npm install -g cordova
+					</code></pre>
+                </section>
+                
+                <section>
+                    <h3>Cordova CLI Demo!</h3>
+                </section>
+                
+                <section>
+                    <h3>Cordova Plugins</h3>
+                </section>
+                
+                <section>
+                    <h3>Some Core APIs Include</h3>
+                    <ul>
+                        <li>Device</li>
+                        <li>File</li>
+                        <li>InAppBrowser</li>
+                        <li>Camera</li>
+                        <li>Geolocation</li>
+                        <li>Network-Information</li>
+                        <li>Vibration</li>
+                        <li>File-Transfer</li>
+                    </ul>
+                </section>
+                
+                <section>
+                    <h3>Discover our plugins + community plugins at <a href="http://plugins.cordova.io" target="_blank">plugins.cordova.io</a></h3>
+                </section>
+                
+                <section>
+                    <h3>Plugins Demo!</h3>
+                    <p>Installing and using the camera API</p>
+                </section>
+                
+                <section>
+                    <h3>Other CLI Features</h3>
+                    <p>hooks: useful for integrating your own build systems or version controls</p>
+                    <p>merges: put platform specific code that gets added to your native directories during prepare</p>
+                </section>
+                
+                <section>
+                    <h3>Frameworks</h3>
+                    <ul>
+                        <li><a href="http://getbootstrap.com/" target="_blank">Bootstrap</a></li>
+                        <li><a href="http://topcoat.io/" target="_blank">Topcoat</a></li>
+                        <li><a href="http://ionicframework.com/" target="_blank">Ionic</a></li>
+                        <li><a href="http://angularjs.org/" target="_blank">Angularjs</a></li>
+                        <li><a href="http://backbonejs.org/" target="_blank">Backbonejs</a></li>
+                        <li><a href="http://emberjs.com/" target="_blank">Emberjs</a></li>
+                    </ul>
+                </section>
+                
+                <section>
+                    <h3>Contributing</h3>
+                    <p>We have 50 git repos for our project</p>
+                    <p>Find them at <a href="https://git-wip-us.apache.org/repos/asf" target="_blank">https://git-wip-us.apache.org/repos/asf</a> or on our <a href="https://github.com/apache" target="_blank">Github mirrors</a</p>
+                    <p>Check out our <a href="http://wiki.cordova.io" target="_blank">wiki</a> for more info.</p>
+                    <p>"Cordova development lifecycle" by Andrew Grieve at 2:00pm will go into more detail.</p>
+                </section>
+                
+                <section>
+                    <h3>What's Next</h3>
+                    <ul style="list-style: none;">
+                        <li class=fragment>swappable web views for android</li>
+                    	<li class=fragment>api audit to match new standards</li>
+                    	<li class=fragment>independent platform releases</li>
+                    	<li class=fragment>improved docs + translations (check out Lisa DeLuca’s talk about how we have been crowdsourcing translations at 5pm)</li>
+                    </ul>
+                </section>
+                
+                <section>
+                    <img src="img/cordovatrack.png">
+                </section>
+                
+                <section>
+                    <h3>Useful links</h3>
+                    <ul style="list-style: none;">
+                        <li><a href="http://cordova.apache.org/" target="_blank">http://cordova.apache.org/</a> (<a href="http://cordova.io" target="_blank">cordova.io</a>)</li>
+                        <li><a href="http://plugins.cordova.io/" target="_blank">http://plugins.cordova.io/</a> </li>
+                        <li><a href="http://cordova.apache.org/docs/en/3.4.0/" target="_blank">http://cordova.apache.org/docs/en/3.4.0/</a> (<a href="http://docs.cordova.io" target="_blank">docs.cordova.io</a>)</li>
+                        <li><a href="https://issues.apache.org/jira/browse/cb" target="_blank">https://issues.apache.org/jira/browse/cb</a></li>
+                        <li><a href="http://wiki.apache.org/cordova/" target="_blank">http://wiki.apache.org/cordova/</a> (<a href="http://wiki.cordova.io" target="_blank">wiki.cordova.io</a>)</li>
+                    </ul>
+                </section>
+                
+				<section>
+				    <h3>Cordova Hackathon</h3>
+				    <p>Sponsored by IBM & RedHat</p>
+				    <p>Win one of two Nexus 7 tablets!</p>
+				    <ul style="list-style: none;">
+                        <li>When: Tuesday</li>
+                        <li>Where: McCourt room</li>
+                        <li>What: Race to Apache Cordova Contribution & Hybrid Mobile App Challenge</li>
+                        <li>Who: Everyone is invited.  8+ Apache Cordova Committers will be in the room answering questions. Come stump the experts!</li>
+                        <li>Why: See what it’s like to participate in the Apache Cordova community.</li>
+                    </ul>
+				     
+                    
+                   
+                    
+                    
+				</section>
+
+				
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
